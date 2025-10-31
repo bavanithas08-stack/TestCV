@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Skill Evaluator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💼 Career Skill Evaluator</h1>
+    <p>Find out if you are ready for your desired job role and get learning recommendations!</p>
+
+    <label for="role">Choose a job role:</label>
+    <select id="role">
+      <option value="">--Select Role--</option>
+      <option value="frontend">Frontend Developer</option>
+      <option value="backend">Backend Developer</option>
+      <option value="dataanalyst">Data Analyst</option>
+    </select>
+
+    <button id="startBtn">Start Assessment</button>
+
+    <div id="questionContainer" class="hidden">
+      <h2 id="question"></h2>
+      <button id="yesBtn">Yes</button>
+      <button id="noBtn">No</button>
+    </div>
+
+    <div id="resultContainer" class="hidden">
+      <h2>Result</h2>
+      <p id="summary"></p>
+      <div id="recommendations"></div>
+      <button id="restartBtn">Restart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
